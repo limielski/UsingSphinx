@@ -30,7 +30,7 @@ html_static_path = ['_static']
 
 master_doc = 'index'
 # Dołącz konfigurację dla generowania plików PDF
-latex_documents = [
-    (master_doc, 'mybook.tex', 'Technologie', 'Leszek Imielski', 'article'),
-]
+#latex_documents = [
+#     (master_doc, 'mybook.tex', 'Technologie', 'Leszek Imielski', 'article'),
+# ]
 
