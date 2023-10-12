@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Using Sphinx'
+project = 'Technologie webowe'
 copyright = '2023, Leszek Imielski'
 author = 'Leszek Imielski'
 release = '0.1'
@@ -27,3 +27,10 @@ language = 'pl'
 import sphinx_rtd_theme
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
+
+master_doc = 'index'
+# Dołącz konfigurację dla generowania plików PDF
+latex_documents = [
+    (master_doc, 'mybook.tex', 'Technologie', 'Leszek Imielski', 'article'),
+]
+

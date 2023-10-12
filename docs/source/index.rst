@@ -3,18 +3,31 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Using Sphinx's documentation!
-========================================
+Spis treści
+===========
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: TECHNOLOGIE
+
+   git/index
+   python/index
+   kryptografia/index
 
 
 
-Indices and tables
-==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
