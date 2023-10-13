@@ -1,7 +1,7 @@
-OOP index
-=========
+OOP
+===
 
 .. toctree::
    :maxdepth: 2
 
-   oop
+   ArtykulOop
