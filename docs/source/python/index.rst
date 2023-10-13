@@ -2,6 +2,8 @@ Python
 ======
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
-   python
+   typing/index
+   OOP/index
+   exceptions/index

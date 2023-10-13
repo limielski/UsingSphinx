@@ -1,5 +1,5 @@
-Exception index
-===============
+Exception
+=========
 
 .. toctree::
    :maxdepth: 2
