@@ -1,5 +1,5 @@
-How to Catch Multiple Exceptions in Python
-==========================================
+Jak obsłużyć kilka różnych błędów w Pythonie
+============================================
 
 Aby umożliwić podjęcie działań w przypadku wystąpienia błędu, implementujesz obsługę wyjątków, pisząc kod wychwytujący i radzący sobie z wyjątkami. Lepsze to niż awaria kodu i przestraszenie użytkownika. Do obsługi wyjątków służy tryinstrukcja. Umożliwia to monitorowanie kodu pod kątem wyjątków i podejmowanie działań w przypadku ich wystąpienia.
 
