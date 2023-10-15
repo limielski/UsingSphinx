@@ -7,4 +7,6 @@ Python
    typing/index
    OOP/index
    exceptions/index
+   raise/index
+   traceback/index
    Iterators-and-Iterables/index

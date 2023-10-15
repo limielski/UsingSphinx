@@ -1,3 +1,5 @@
+.. _iteratorsAndIterables0:
+
 Iteratory i elementy iteracyjne w Pythonie: uruchamiaj wydajne iteracje
 =======================================================================
 
