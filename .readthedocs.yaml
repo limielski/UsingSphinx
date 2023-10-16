@@ -1,11 +1,11 @@
 version: 2
 build:
   os: "ubuntu-22.04"
-
-python:
-  version: "3.8"  # Wersja Pythona 3.11
-  install:
-    - requirements: docs/requirements.txt
+  tools:
+    python:
+      version: "3.8"  # Wersja Pythona 3.11
+      install:
+        - requirements: docs/requirements.txt
 
 sphinx:
   configuration: docs/source/conf.py  # Ścieżka do pliku conf.py
