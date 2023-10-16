@@ -4,6 +4,10 @@ build:
   tools:
     python: '3.11'
 
+python:
+  install:
+    - requirements.txt
+
 sphinx:
   configuration: docs/source/conf.py  # Ścieżka do pliku conf.py
 
