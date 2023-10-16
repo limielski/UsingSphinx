@@ -5,3 +5,4 @@ Dokumentowanie kodu
    :maxdepth: 2
 
    docCode0
+   docCode1
