@@ -1,15 +1,16 @@
-version: 2
+version: "2"
 build:
   os: "ubuntu-22.04"
   tools:
     python:
-      version: 3.11  # Wersja Pythona 3.11
+      version: "3.11"
       install:
-        - docs/requirements.txt
+        - pip install -r docs/requirements.txt
 
 sphinx:
-  configuration: docs/source/conf.py  # Ścieżka do pliku conf.py
+  configuration: "docs/source/conf.py"
 
-formats: ['htmlzip']
+formats: 'htmlzip'
+
 
 
