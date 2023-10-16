@@ -3,7 +3,7 @@ build:
   os: "ubuntu-22.04"
   tools:
     python:
-      version: "3.11"
+      version: "3.8"
       install:
         - pip install -r docs/requirements.txt
 
