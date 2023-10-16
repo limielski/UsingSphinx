@@ -7,7 +7,7 @@ build:
 python:
   version: "3.11"  # Wersja Pythona 3.11
   install:
-    - requirements.txt
+    - docs/requirements.txt
 
 sphinx:
   configuration: docs/source/conf.py  # Ścieżka do pliku conf.py
