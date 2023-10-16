@@ -4,6 +4,7 @@ Python
 .. toctree::
    :maxdepth: 2
 
+   news/index
    typing/index
    OOP/index
    exceptions/index
