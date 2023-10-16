@@ -1,6 +1,6 @@
 # Zależności Sphinx
 sphinx==7.2.6 # Wersja Sphinx kompatybilna z Pythonem 3.8
-sphinx_rtd_theme  # Temat Read the Docs
+# sphinx_rtd_theme  # Temat Read the Docs
 recommonmark==0.7.1  # Obsługa Markdown w Sphinx
 docutils>=0.18  # Obsługa reStructuredText
 
