@@ -1,7 +1,7 @@
 Python Basics: Object-Oriented Programming
 ==========================================
 
-.. `_PythonBasics-oop-programming`
+.. _pbasicsoo:
 
 https://realpython.com/courses/python-basics-oop/
 
