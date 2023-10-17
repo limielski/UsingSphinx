@@ -1,7 +1,7 @@
 Python Basics Exercises: Object-Oriented Programming
 ====================================================
 
-In Python Basics: Object-Oriented Programming, you learned how OOP, or object-oriented programming, is a method of structuring a program by bundling related properties and behaviors into individual objects.
+:ref:`In Python Basics: Object-Oriented Programming <PythonBasics-oop-programming>`, you learned how OOP, or object-oriented programming, is a method of structuring a program by bundling related properties and behaviors into individual objects.
 
 In this video course, you’ll practice the following:
 
