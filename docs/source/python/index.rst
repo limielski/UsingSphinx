@@ -5,6 +5,7 @@ Python
    :maxdepth: 2
 
    news/index
+   variables/index
    typing/index
    OOP/index
    exceptions/index
