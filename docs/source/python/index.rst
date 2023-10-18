@@ -12,5 +12,6 @@ Python
    raise/index
    traceback/index
    Iterators-and-Iterables/index
+   generators/index
    docCode/index
    django/index
