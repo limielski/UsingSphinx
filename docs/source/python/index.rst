@@ -2,11 +2,12 @@ Python
 ======
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
 
    news/index
    variables/index
    typing/index
+   string/index
    OOP/index
    exceptions/index
    raise/index
