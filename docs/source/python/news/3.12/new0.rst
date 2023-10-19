@@ -1,3 +1,5 @@
+.. _new0:
+
 Python 3.12: Cool New Features for You to Try
 =============================================
 
@@ -16,17 +18,12 @@ Optimizations, including inlined comprehensions, for a faster Python
 A new syntax for type variables that you use to annotate generics
 Support for the powerful perf profiler on Linux
 
-What's New in Python 3.12 - video
----------------------------------
+Polecane video:
 
-https://realpython.com/courses/new-features-python-312/
+----
 
-It’s that time of year again, time for a new release of Python. Although Python 3.12 mostly focuses on internal improvements, there’s a little something for everyone. You can read up on all the new features by checking out the changelog.
+.. toctree::
+   :maxdepth: 2
 
-In this video course, you’ll learn about the following changes:
+   video/new0-video-0
 
-* Improvements to f-strings
-* More did-you-mean error messages
-* New features in the standard library
-* Additions to static typing
-* Changes to the CPython interpreter

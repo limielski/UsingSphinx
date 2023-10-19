@@ -1,3 +1,5 @@
+.. _formatting0-2-video:
+
 Python 3's F-Strings: An Improved String Formatting Syntax - video
 ------------------------------------------------------------------
 

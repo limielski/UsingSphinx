@@ -17,5 +17,12 @@ In this tutorial, you’ll learn how to:
 * Decide when to use traditional interpolation tools instead of f-strings
 * To get the most out of this tutorial, you should be familiar with Python’s string data type. It’s also be beneficial to have experience with other string interpolation tools like the modulo operator (%) and the .format() method.
 
+.. toctree::
+   :maxdepth: 2
+   :caption: videa
 
-.. include:: formatting0-2-video.rst
+   formatting0-2-video
+   /python/news/3.12/video/new0-video-2
+
+.. :ref:`Python 3’s F-Strings: An Improved String Formatting Syntax - video <new0-video-2>`
+.. :ref:`formatting0-2-video`
