@@ -6,7 +6,7 @@ Python
 
    news/index
    variables/index
-   typing/index
+   hints/index
    string/index
    OOP/index
    exceptions/index
@@ -14,5 +14,6 @@ Python
    traceback/index
    Iterators-and-Iterables/index
    generators/index
+   refactoring/index
    docCode/index
    django/index
