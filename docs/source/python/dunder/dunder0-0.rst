@@ -13,6 +13,8 @@ Table of Contents
 * Is the Idiom Boilerplate Code That Should Be Simplified?
 * Conclusion
 
+----
+
 Polecane video
 
 .. toctree::
