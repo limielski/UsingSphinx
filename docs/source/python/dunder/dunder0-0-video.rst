@@ -1,3 +1,5 @@
+.. _dunder0-0-video:
+
 What Does if __name__ == "__main__" Mean in Python?
 ===================================================
 

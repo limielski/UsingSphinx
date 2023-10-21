@@ -15,9 +15,4 @@ Table of Contents
 
 ----
 
-Polecane video
-
-.. toctree::
-   :maxdepth: 2
-
-   dunder0-0-video
+Polecane video :ref:`What Does if __name__ == "__main__" Mean in Python? <dunder0-0-video>`
