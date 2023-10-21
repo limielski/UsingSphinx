@@ -17,3 +17,4 @@ Python
    refactoring/index
    docCode/index
    django/index
+   repl/index
