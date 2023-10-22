@@ -1,4 +1,4 @@
-.. cli-args0-0-video:
+.. _cli-args0-0-video:
 
 Command Line Interfaces in Python
 =================================

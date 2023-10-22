@@ -18,6 +18,7 @@ Python
    traceback/index
    Iterators-and-Iterables/index
    generators/index
+   cli/index
    refactoring/index
    testing/index
    docCode/index
