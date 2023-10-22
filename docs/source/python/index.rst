@@ -9,6 +9,8 @@ Python
    dunder/index
    hints/index
    string/index
+   scripts/index
+   modules/index
    OOP/index
    exceptions/index
    raise/index

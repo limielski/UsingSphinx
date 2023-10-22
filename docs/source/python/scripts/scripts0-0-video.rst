@@ -1,4 +1,4 @@
-.. _script0-0-video:
+.. _scripts0-0-video:
 
 Running Python Scripts - video
 ==============================
