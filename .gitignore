@@ -1,5 +1,6 @@
 .DS_Store
 .idea
+**/code/
 /docs/build/
 /docs/source/_templates/
 /venv/
