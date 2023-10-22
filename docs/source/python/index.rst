@@ -19,6 +19,7 @@ Python
    Iterators-and-Iterables/index
    generators/index
    refactoring/index
+   testing/index
    docCode/index
    django/index
    repl/index
