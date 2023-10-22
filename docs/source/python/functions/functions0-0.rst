@@ -20,6 +20,9 @@ Table of Contents
 ----
 
 Polecane video
+--------------
+
+:ref:`Defining Main Functions in Python <functions0-0-video>`
 
 ----
 
