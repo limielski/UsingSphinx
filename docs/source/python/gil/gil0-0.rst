@@ -3,6 +3,7 @@ Bypassing the GIL for Parallel Processing in Python
 
 https://realpython.com/python-parallel-processing/
 
+zmiana
 
 * Recall the Fundamentals of Parallel Processing
    * What’s Parallel Processing?
