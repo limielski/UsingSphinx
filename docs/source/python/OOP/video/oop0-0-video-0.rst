@@ -1,7 +1,7 @@
 Python Basics: Object-Oriented Programming
 ==========================================
 
-.. _pbasicsoo:
+.. _oop0-0-video-0:
 
 https://realpython.com/courses/python-basics-oop/
 
@@ -16,6 +16,7 @@ In this video course, you’ll learn how to:
 * Create a class, which is like a blueprint for creating an object
 * Use classes to create new objects
 * Instantiate classes with attributes and methods
-* This video course is part of the Python Basics series, which accompanies Python Basics: `A Practical Introduction to Python 3 <https://realpython.com/products/python-basics-book/>`_. You can also check out the other Python Basics courses.
+
+This video course is part of the Python Basics series, which accompanies Python Basics: `A Practical Introduction to Python 3 <https://realpython.com/products/python-basics-book/>`_. You can also check out the other Python Basics courses.
 
 .. note:: Note that you’ll be using IDLE to interact with Python throughout this course. If you’re just getting started, then you might want to check out Python Basics: Setting Up Python before diving into this course.
