@@ -4,6 +4,7 @@ Dunder
 .. toctree::
    :maxdepth: 2
 
+   dunder-list-index
    dunder0-0
    dunder0-0-video
    dunder1-0
@@ -30,8 +31,10 @@ Oto lista metod specjalnych w Pythonie
 * Metoda `__gt__(self, other)`: Porównywanie obiektów (`>`).
 * Metoda `__ge__(self, other)`: Porównywanie obiektów (`>=`).
 * Metoda `__add__(self, other)`: Dodawanie obiektów (`+`).
+* Metoda `__radd__(self, other)`: Dodawanie obiektów z zamienioną kolejnością (+ po prawej stronie).
 * Metoda `__sub__(self, other)`: Odejmowanie obiektów (`-`).
 * Metoda `__mul__(self, other)`: Mnożenie obiektów (`*`).
+* Metoda `__rmul__(self, other)`: Mnożenie obiektów z zamienioną kolejnością (* z prawej).
 * Metoda `__truediv__(self, other)`: Dzielenie obiektów (`/`).
 * Metoda `__floordiv__(self, other)`: Dzielenie całkowitoliczbowe obiektów (`//`).
 * Metoda `__mod__(self, other)`: Reszta z dzielenia obiektów (`%`).
