@@ -34,7 +34,7 @@ Oto lista metod specjalnych w Pythonie
 * Metoda `__radd__(self, other)`: Dodawanie obiektów z zamienioną kolejnością (+ po prawej stronie).
 * Metoda `__sub__(self, other)`: Odejmowanie obiektów (`-`).
 * Metoda `__mul__(self, other)`: Mnożenie obiektów (`*`).
-* Metoda `__rmul__(self, other)`: Mnożenie obiektów z zamienioną kolejnością (* z prawej).
+* Metoda `__rmul__(self, other) <rmul>`: Mnożenie obiektów z zamienioną kolejnością (* z prawej).
 * Metoda `__truediv__(self, other)`: Dzielenie obiektów (`/`).
 * Metoda `__floordiv__(self, other)`: Dzielenie całkowitoliczbowe obiektów (`//`).
 * Metoda `__mod__(self, other)`: Reszta z dzielenia obiektów (`%`).
