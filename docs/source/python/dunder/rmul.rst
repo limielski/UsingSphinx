@@ -3,6 +3,8 @@
 rmul
 ====
 
+https://www.geeksforgeeks.org/__rmul__-in-python/
+
 For every operator sign, there is an underlying mechanism. This underlying mechanism is a special method that will be called during the operator action. This special method is called magical method. For every arithmetic calculation like +, -, `*`, /, we require 2 operands to carry out operator functionality.
 
 Examples:
