@@ -8,4 +8,6 @@ OOP
    video/oop0-0-video-1
    video/oop0-1-video-0
    video/oop0-0-video-0
+   video/oop2-0-video
+   video/oop2-1-video
    ArtykulOop
