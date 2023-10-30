@@ -1,0 +1,6 @@
+Biblioteki
+==========
+
+.. toctree::
+
+   matplotlib/index
