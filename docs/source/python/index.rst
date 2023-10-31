@@ -4,6 +4,7 @@ Python
 .. toctree::
    :maxdepth: 4
 
+   general/index
    news/index
    variables/index
    functions/index
