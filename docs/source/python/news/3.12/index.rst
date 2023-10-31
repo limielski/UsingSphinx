@@ -5,3 +5,4 @@ Python 3.12
    :maxdepth: 2
 
    new0
+   new1-0
