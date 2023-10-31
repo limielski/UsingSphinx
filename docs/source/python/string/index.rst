@@ -4,5 +4,6 @@ String
 .. toctree::
    :maxdepth: 4
 
-   string0-0
    formatting/index
+   string0-0
+   string1-0
