@@ -25,4 +25,6 @@ Python
    docCode/index
    django/index
    repl/index
+   pip/index
+   virtual/index
    gil/index
