@@ -30,3 +30,4 @@ Python
    pip/index
    virtual/index
    gil/index
+   git/index
