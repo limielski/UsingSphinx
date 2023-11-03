@@ -3,7 +3,6 @@ Django for Web Development
 
 https://realpython.com/learning-paths/django-web-development/
 
-
 Get Started With Django: Build a Portfolio App
 ----------------------------------------------
 
