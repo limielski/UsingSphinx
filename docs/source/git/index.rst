@@ -2,7 +2,7 @@ Systemy kontroli wersji
 -----------------------
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Git
 
    git
