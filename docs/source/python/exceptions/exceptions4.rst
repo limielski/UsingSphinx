@@ -174,7 +174,6 @@ W tym przykładzie tworzysz instancję kilku różnych grup wyjątków, co pokaz
 
 Twoje pierwsze spotkanie z grupą wyjątków będzie prawdopodobnie polegać na jej prześledzeniu. Śledzenia grup wyjątków są sformatowane tak, aby wyraźnie pokazać strukturę w grupie. Po podniesieniu grupy wyjątków zobaczysz ślad:
 
-
 .. code-block:: python
    :linenos:
 
