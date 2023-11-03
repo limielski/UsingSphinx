@@ -1,7 +1,6 @@
 Grupy wyjątków oraz except*w Pythonie 3.11
 ==========================================
 
-
 źródło : `dalsza część <https://realpython.com/python311-exception-groups/>`_
 
 Radzenie sobie z wyjątkami jest ważną częścią programowania. Czasami błędy powstają z powodu błędów w kodzie. W takich przypadkach dobre komunikaty o błędach pomogą w skutecznym debugowaniu kodu. Innym razem błędy nie wynikają z winy Twojego kodu. Być może użytkownik próbuje otworzyć uszkodzony plik, być może sieć nie działa, a może brakuje uwierzytelnienia w bazie danych.
