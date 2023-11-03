@@ -104,7 +104,6 @@ Jeśli już wcześniej pracowałeś z wyjątkami, może się to wydawać intuicy
 
 Chociaż w danym momencie aktywny jest co najwyżej jeden wyjątek, możliwe jest łączenie powiązanych wyjątków. To łączenie zostało wprowadzone w PEP 3134 dla Pythona 3.0. Jako przykład przyjrzyj się, co się stanie, jeśli podczas obsługi błędu zgłosisz nowy wyjątek:
 
-
 .. code-block:: python
    :linenos:
 
