@@ -1,7 +1,7 @@
 Introduction to Git and GitHub for Python Developers
 ====================================================
 
-Paul Mealus 9 Lessons  37m
+Video Paul Mealus 9 Lessons  37m
 
 https://realpython.com/courses/python-git-github-intro/
 
