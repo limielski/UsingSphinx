@@ -1,7 +1,7 @@
 How to Use Type Hints for Multiple Return Types in Python
 =========================================================
 
-by Claudia Ng
+by Claudia Ng  Oct 30, 2023
 
 `źródło: <https://realpython.com/python-type-hints-multiple-types/?utm_source=notification_summary&utm_medium=email&utm_campaign=2023-10-20>`_
 
