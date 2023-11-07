@@ -32,3 +32,4 @@ Python
    gil/index
    jupiter/index
    git/index
+   anaconda/index
