@@ -7,6 +7,7 @@ Python
    general/index
    news/index
    variables/index
+   numbers/index
    functions/index
    lambda/index
    dunder/index
