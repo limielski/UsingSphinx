@@ -1,0 +1,6 @@
+Embeddings and Vector Databases With ChromaDB
+=============================================
+
+ Harrison Hoffman  Nov 15, 2023
+
+https://realpython.com/chromadb-vector-database/
