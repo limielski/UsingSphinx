@@ -7,3 +7,4 @@ String
    formatting/index
    string0-0
    string1-0
+   string2-0
