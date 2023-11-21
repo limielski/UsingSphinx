@@ -19,6 +19,7 @@ extensions = ['nbsphinx']
 templates_path = ['_templates']
 exclude_patterns = []
 
+
 language = 'pl'
 
 # -- Options for HTML output -------------------------------------------------
