@@ -15,6 +15,7 @@ Python
    string/index
    scripts/index
    modules/index
+   context-manager/index
    OOP/index
    exceptions/index
    raise/index

@@ -1,0 +1,10 @@
+Context Managers and Python's with Statement
+============================================
+
+by Leodanis Pozo Ramos  Jun 02, 2021
+
+https://realpython.com/python-with-statement/
+
+.. toctree::
+
+   video/cm0-0-video
