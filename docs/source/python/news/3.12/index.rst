@@ -6,3 +6,4 @@ Python 3.12
 
    new0
    new1-0
+   news1-0
