@@ -13,6 +13,7 @@ Python
    dunder/index
    hints/index
    string/index
+   date-time/index
    scripts/index
    modules/index
    context-manager/index
