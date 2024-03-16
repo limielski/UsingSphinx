@@ -26,3 +26,9 @@ Podstawy Gita
    .. code-block:: bash
 
       git status
+
+8. WYcofywanie pliku z repozytorium
+
+   .. code-block:: bash
+
+      git reset plik
