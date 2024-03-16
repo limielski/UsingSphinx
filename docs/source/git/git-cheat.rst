@@ -7,6 +7,19 @@ Git w skrócie
 Operacje związane z repozytorium lokalnym:
 ------------------------------------------
 
+.. list-table::
+   :widths: 25 30 45
+   :header-rows: 1
+
+   * - Cel Działania
+     - Polecenia Git
+     - Wyjaśnienie
+   * - dodawanie do repozytorium
+     - ``git add plik``
+     - dodaje plik do repozytorium. możemy podać cały katalog. Jesli chcemy dodać bieżący podajemy znak kropki``.``
+   * - wycofanie z repozytorium
+     - ``git reset plik``
+     - dodany plik jest wycofywany z repozytorium
 
 .. list-table::
    :widths: 25 30 45
@@ -85,5 +98,3 @@ Operacje związane z repozytorium zdalnym "upstream" (lub innym zdalnym repozyto
    * - Wyświetlanie historii commitów na zdalnym repozytorium
      - ``git log upstream/<gałąź>``
      - Wyświetla historię commitów na repozytorium "upstream" lub innym zdalnym repozytorium.
-
-
