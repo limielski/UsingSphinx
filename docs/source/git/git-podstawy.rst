@@ -27,8 +27,27 @@ Podstawy Gita
 
       git status
 
-8. WYcofywanie pliku z repozytorium
+8. Wycofywanie pliku z repozytorium
 
    .. code-block:: bash
 
       git reset plik
+9. Utworzenie nowej gałęzi i przełączenie się na nią
+
+   .. code-block:: bash
+
+      git checkout mybranch
+
+10. Wysłanie zmian na github, ale wczesniej utworzenie tej samej gałęzi co lokalnie,
+
+   - jesli wcześniej tego nie zrobiono
+
+   .. code-block::
+
+      git push --set-upstream origin mybranch
+
+   - jesli wcześniej to zrobiono wystarczy samo
+
+   .. code-block::
+
+      git push
