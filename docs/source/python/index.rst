@@ -5,6 +5,7 @@ Python
    :maxdepth: 4
 
    general/index
+   argparse/index
    news/index
    variables/index
    numbers/index
