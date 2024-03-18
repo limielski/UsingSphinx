@@ -4,7 +4,6 @@ ArgumentParser()
 zestawienie argumentow
 ----------------------
 
-
 +-----------------------+-------------------------------------------------------------+------+
 | usage                 | Opis użycia prog. Wygenerowany na podstawie argum.          | None |
 +-----------------------+-------------------------------------------------------------+------+
@@ -56,3 +55,11 @@ przykład
    args = parser.parse_args()
    for arg in vars(args):
       print(arg, getattr(args, arg))
+
+Omówienie argumentów
+--------------------
+
+prog
+^^^^
+
+Określa nazwę programu, która będzie używana w wyświetlanych komunikatach.

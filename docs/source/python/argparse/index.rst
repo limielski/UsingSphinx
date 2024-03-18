@@ -2,8 +2,7 @@ Argparse
 ========
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
 
    argparse00
    argparse02
-   argparse04
