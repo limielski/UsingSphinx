@@ -6,6 +6,7 @@ Python
 
    general/index
    argparse/index
+   mail/index
    news/index
    variables/index
    numbers/index
