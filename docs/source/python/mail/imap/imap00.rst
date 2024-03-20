@@ -8,7 +8,7 @@ Algorytm połączenia
    mail.login(USERNAME, PASSWORD)
 
    # Select the mailbox you want to delete in
-   mail.select('INBOX')
+   mail.select("INBOX")
 
    # Get the list of emails
    result = ''
