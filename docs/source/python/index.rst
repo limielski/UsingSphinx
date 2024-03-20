@@ -35,7 +35,6 @@ Python
    pip/index
    virtual/index
    gil/index
-   jupiter/index
    git/index
    anaconda/index
    ml/index

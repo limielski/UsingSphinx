@@ -1,5 +1,5 @@
-Algorytm połączenia
-===================
+Wstęp: Algorytm połączenia
+==========================
 
 .. code-block:: python
    :linenos:

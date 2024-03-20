@@ -1,5 +1,5 @@
 Funkcja mail.uid
-================
+----------------
 
 mail.uid(command, argument, msg_set)
 
