@@ -2,7 +2,7 @@ IMAP
 ====
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 6
 
    imap00
    imap05

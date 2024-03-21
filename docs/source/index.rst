@@ -7,27 +7,9 @@ Spis treści
 ===========
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 6
    :caption: TECHNOLOGIE
 
    git/index
    python/index
    kryptografia/index
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

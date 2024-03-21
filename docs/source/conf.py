@@ -27,7 +27,7 @@ language = 'pl'
 
 html_theme = 'sphinx_rtd_theme'
 html_theme_options = {
-     'navigation_depth': 5,  # Ustaw maksymalną głębokość nawigacji
+     'navigation_depth': 6,  # Ustaw maksymalną głębokość nawigacji
 }
 html_static_path = ['_static']
 
