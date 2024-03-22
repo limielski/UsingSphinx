@@ -65,8 +65,38 @@ Możemy użyć metody select() obiektu imap_connection, aby wybrać folder, a na
        status, msg_data = imap_connection.fetch(msg_id, '(RFC822.HEADER)')
        print(msg_data[0][1])
 
+Funkcja fetch
+-------------
+
+Funkcja `fetch()` w protokole IMAP służy do pobierania danych konkretnych wiadomości na podstawie ich identyfikatorów (UID lub numerów sekwencyjnych). Głównym celem tej funkcji jest pobranie treści, nagłówków lub innych danych z określonych wiadomości.
+
+Oto opis tej funkcji oraz możliwe wartości parametrów:
+
+1. Pierwszy parametr (message_set):
+   - Wartość: Ciąg znaków reprezentujący identyfikatory wiadomości (UID lub numery sekwencyjne) lub zakres tych identyfikatorów.
+   - Opis: Określa, które wiadomości mają zostać pobrane. Możesz podać pojedynczy numer wiadomości, listę numerów lub zakres numerów. Na przykład `1`, `1:5`, `2,4,6`.
+
+2. Drugi parametr (data_items):
+   - Wartość: Ciąg znaków reprezentujący żądane dane do pobrania.
+   - Opis: Określa, jakie konkretne dane chcesz pobrać z wiadomości. Możesz pobrać treść wiadomości, nagłówki, załączniki itp. Poprawny format tego parametru zależy od implementacji biblioteki IMAP i może zawierać różne opcje. Najczęściej używaną opcją jest `(RFC822)`, która pobiera treść i nagłówki wiadomości.
+
+Przykładowe wartości parametru `data_items`:
+- `(RFC822)`: Pobiera treść i nagłówki wiadomości.
+- `BODY[HEADER]`: Pobiera jedynie nagłówki wiadomości.
+- `BODY[TEXT]`: Pobiera jedynie treść wiadomości.
+
+Przykład użycia funkcji `fetch()`:
+
+```python
+# Pobierz treść i nagłówki wiadomości o numerze UID 1
+resp_code, mail_data = imap_ssl.fetch('1', '(RFC822)')
+```
+
+W tym przykładzie używamy funkcji `fetch()` w celu pobrania treści i nagłówków wiadomości o numerze UID równym 1. Otrzymane dane zostaną zwrócone jako wynik operacji.
+
 Pobranie treści wiadomości
---------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 Po znalezieniu interesującej nas wiadomości, możemy użyć metody fetch() do pobrania pełnej treści wiadomości.
 
@@ -79,7 +109,7 @@ Po znalezieniu interesującej nas wiadomości, możemy użyć metody fetch() do 
    print(email_body.decode('utf-8'))
 
 Pobieranie nagłówków wiadomości
--------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Aby uzyskać dostęp tylko do nagłówków wiadomości bez pobierania całej treści, możemy użyć metody fetch() z odpowiednimi argumentami.
 
@@ -90,6 +120,31 @@ Aby uzyskać dostęp tylko do nagłówków wiadomości bez pobierania całej tre
    status, msg_data = imap_connection.fetch('1', '(BODY[HEADER])')
    email_header = msg_data[0][1]
    print(email_header.decode('utf-8'))
+
+
+Funkcja search
+--------------
+
+Funkcja `imap_ssl.search(None, "ALL")` służy do wyszukiwania wiadomości w skrzynce pocztowej na podstawie określonych kryteriów. Głównym celem jest zwrócenie identyfikatorów (numery UID lub numery sekwencyjne) wiadomości spełniających podane kryteria wyszukiwania. Gdy wywołujesz tę funkcję z argumentami `None` i `"ALL"`, oznacza to, że chcesz pobrać wszystkie wiadomości znajdujące się w skrzynce pocztowej.
+
+Oto opis parametrów tej funkcji oraz możliwe wartości:
+
+1. Pierwszy parametr (mailbox):
+   - Wartość: `None` lub nazwa skrzynki pocztowej.
+   - Opis: Określa skrzynkę pocztową, w której chcesz przeprowadzić wyszukiwanie. Jeśli wartość to `None`, wyszukiwanie będzie prowadzone w aktualnie wybranej skrzynce.
+
+2. Drugi parametr (criteria):
+   - Wartość: Ciąg znaków reprezentujący kryteria wyszukiwania.
+   - Opis: Określa kryteria, na podstawie których chcesz wyszukać wiadomości. Możesz użyć różnych kryteriów wyszukiwania, takich jak `ALL` (wszystkie wiadomości), `UNSEEN` (nieprzeczytane wiadomości), `FROM`, `TO`, `SUBJECT`, `SINCE`, `BEFORE` itp.
+
+Przykładowe wartości parametru `criteria`:
+- `"ALL"`: Wyszukuje wszystkie wiadomości w skrzynce pocztowej.
+- `"UNSEEN"`: Wyszukuje nieprzeczytane wiadomości.
+- `"FROM example@example.com"`: Wyszukuje wiadomości, których nadawcą jest określony adres e-mail.
+- `"SINCE 1-Jan-2023"`: Wyszukuje wiadomości wysłane po określonej dacie.
+
+Oczywiście, istnieją też bardziej złożone kryteria wyszukiwania, które można łączyć w celu bardziej szczegółowego wyszukiwania. Jednak używając `"ALL"`, jak w Twoim przykładzie, otrzymasz wszystkie wiadomości znajdujące się w skrzynce pocztowej.
+
 
 Usuwanie wiadomości
 -------------------

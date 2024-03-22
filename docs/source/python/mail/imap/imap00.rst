@@ -15,15 +15,16 @@ Schemat uzycia IMAP
 
    resp_code, response = imap_ssl.login("someuser@gmail.com", app_password)  # Response jest jednoelementową listą
 
-   resp_code, mail_count = imap_ssl.select(mailbox="INBOX", readonly=True)
+   resp_code, mail_count = imap_ssl.select(mailbox="INBOX", readonly=True) # OK [b'62']
 
-   resp_code, mail_ids = imap_ssl.search(None, "ALL")
-   ids = mail_ids[0].decode().split()
+   resp_code, mail_ids = imap_ssl.search(None, "ALL") # resp-code: OK, mail-ids: [b'1 2 3 4 5 6 7 8 9 10 ...']
+   ids = mail_ids[0].decode().split() # ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', ...]
 
    for mail_id in ids[-2]:
        print("================== Start of Mail [{}] ====================".format(mail_id))
 
        resp_code, mail_data = imap_ssl.fetch(mail_id, '(RFC822)')  # # Fetch mail data.
+       # OK [(b'62 (RFC822 {16141}', b'Delivered-To: leszekimielski@gmail.com\r\nReceived: by 2002:a05:6a10:8 ...]
 
        message = email.message_from_bytes(mail_data[0][1])  # # Construct Message from mail data
        print("From       : {}".format(message.get("From")))
@@ -46,16 +47,16 @@ Schemat uzycia IMAP
 
 Ten fragment kodu odpowiada za odpowiednie połączenie z serwerem pocztowym przez IMAP i pobranie listy wiadomości e-mail z wybranego folderu poczty. Spróbuję to wytłumaczyć krok po kroku.
 
-imap_ssl = imaplib.IMAP4_SSL(IMAP_SERVER, IMAP_PORT):
+:python:`imap_ssl = imaplib.IMAP4_SSL(IMAP_SERVER, IMAP_PORT)`
 
 Ta linia tworzy nowe połączenie do serwera IMAP. Jest to serwer poczty, który przechowuje wiadomości e-mail na serwerze i pozwala klientom na ich pobieranie.
 IMAP4_SSL jest wersją protokołu IMAP, która używa SSL (Secure Sockets Layer) do zapewnienia bezpiecznej komunikacji.
 
-imap_ssl.login(USERNAME, PASSWORD):
+:python:`imap_ssl.login(USERNAME, PASSWORD)`
 
 Ta linia loguje się na serwer IMAP za pomocą podanej nazwy użytkownika i hasła.
 
-`imap_ssl.select('INBOX')`
+:python:``imap_ssl.select('INBOX')`
 
 Ta linia wybiera skrzynkę odbiorczą (INBOX) do pracy.
 Możesz wybrać inne skrzynki, takie jak wysłane e-maile (SENT), ale w tym przypadku pracujemy na skrzynce odbiorczej.
@@ -71,20 +72,20 @@ natomiast mail_data to lista zawierająca dane na temat wiadomości, czyli numer
 
 :python:`mail_data = [ (TUPLA), b')']`
 
-Czyli `mail_data` ma strukturę listy jednoelementowej w ktorej element jest tuplą `((TUPLA), b')')`
+Czyli :python:``mail_data` ma strukturę listy jednoelementowej w ktorej element jest tuplą :python:``((TUPLA), b')')`
 
-`TUPLA = (b'numer_sekwencyjny (RFC822 {ilość byte\`ów}\', Nagłówek oraz treść i załączniki)`
+:python:``TUPLA = (b'numer_sekwencyjny (RFC822 {ilość byte\`ów}\', Nagłówek oraz treść i załączniki)`
 
 albo inaczej
 
-`TUPLA[0] = b'numer_sekwencyjny (RFC822 {ilość byte\`ów}\'`
-`TUPLA[1] = Nagłówek oraz treść i załączniki`
+:python:``TUPLA[0] = b'numer_sekwencyjny (RFC822 {ilość byte\`ów}\'`
+:python:``TUPLA[1] = Nagłówek oraz treść i załączniki`
 
 i na koniec wynika z tego, że
 
-`mail_data[0][0]` odnosi się do b'numer_sekwencyjny (RFC822 {ilość byte\`ów}\'
+:python:`mail_data[0][0]` odnosi się do b'numer_sekwencyjny (RFC822 {ilość byte\`ów}\'
 
-`mail_data[0][1]` odnosi się do Nagłówka oraz treści i załączników
+:python:`mail_data[0][1]` odnosi się do Nagłówka oraz treści i załączników
 
 Z uzyciem uid()
 ---------------
