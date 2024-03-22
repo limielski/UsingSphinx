@@ -68,11 +68,11 @@ zwraca odpowiedż w formie :python:`'OK'` oraz :python:`mail_ids` -- jednoleleme
 Następnie w celu uzyskania informacji o wiadomosci takich jak ngłówki i treść używamy metody :python:`fetch(mail_id, 'RFC822`)
 Inne mozliwości zamiast RFC822 to:
 :python:`resp_code` zwraca :python`'OK'` bądź ..
-natomiast mail_data to lista zawierająca dane na temat wiadomości, czyli numeru sekwencyjnego maila, danych, ktore sa przesylane, dlugości meila w byte'ach, oraz nagłówka, treści wiadomości i załaczników
+natomiast :python:`mail_data` to lista zawierająca dane na temat wiadomości, czyli numeru sekwencyjnego maila, danych, ktore sa przesylane, dlugości meila w byte'ach, oraz nagłówka, treści wiadomości i załaczników
 
 :python:`mail_data = [ (TUPLA), b')']`
 
-Czyli :python:``mail_data` ma strukturę listy jednoelementowej w ktorej element jest tuplą :python:``((TUPLA), b')')`
+Czyli :python:`mail_data` ma strukturę listy jednoelementowej w ktorej element jest tuplą :python:`((TUPLA), b')')`
 
 :python:``TUPLA = (b'numer_sekwencyjny (RFC822 {ilość byte\`ów}\', Nagłówek oraz treść i załączniki)`
 
@@ -83,16 +83,17 @@ albo inaczej
 
 i na koniec wynika z tego, że
 
-:python:`mail_data[0][0]` odnosi się do b'numer_sekwencyjny (RFC822 {ilość byte\`ów}\'
+:python:`mail_data[0][0]` odnosi się do :python:`b'numer_sekwencyjny (RFC822 {ilość byte\`ów}\'
 
-:python:`mail_data[0][1]` odnosi się do Nagłówka oraz treści i załączników
+:python:`mail_data[0][1]` odnosi się do **Nagłówka oraz treści i załączników**
 
 Z uzyciem uid()
 ---------------
 
 aby uzywać uid zmiast numerow sekwencji
 
-# Zamiast pobierania numerów sekwencji nalezy pobierać uid:
+# Zamiast pobierania numerów sekwencji nalezy pobierać uid.
+W tym celu należy w kodzie prezentowanym wyżej zastosować nastepujące zmiany
 
 .. code-block::
    :linenos:
