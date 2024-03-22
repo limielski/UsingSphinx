@@ -56,7 +56,7 @@ IMAP4_SSL jest wersją protokołu IMAP, która używa SSL (Secure Sockets Layer)
 
 Ta linia loguje się na serwer IMAP za pomocą podanej nazwy użytkownika i hasła.
 
-:python:``imap_ssl.select('INBOX')`
+:python:`imap_ssl.select('INBOX')`
 
 Ta linia wybiera skrzynkę odbiorczą (INBOX) do pracy.
 Możesz wybrać inne skrzynki, takie jak wysłane e-maile (SENT), ale w tym przypadku pracujemy na skrzynce odbiorczej.
@@ -74,12 +74,12 @@ natomiast :python:`mail_data` to lista zawierająca dane na temat wiadomości, c
 
 Czyli :python:`mail_data` ma strukturę listy jednoelementowej w ktorej element jest tuplą :python:`((TUPLA), b')')`
 
-:python:``TUPLA = (b'numer_sekwencyjny (RFC822 {ilość byte\`ów}\', Nagłówek oraz treść i załączniki)`
+:python:`TUPLA = (b'numer_sekwencyjny (RFC822 {ilość byte\`ów}\', Nagłówek oraz treść i załączniki)`
 
 albo inaczej
 
-:python:``TUPLA[0] = b'numer_sekwencyjny (RFC822 {ilość byte\`ów}\'`
-:python:``TUPLA[1] = Nagłówek oraz treść i załączniki`
+:python:`TUPLA[0] = b'numer_sekwencyjny (RFC822 {ilość byte\`ów}\'`
+:python:`TUPLA[1] = Nagłówek oraz treść i załączniki`
 
 i na koniec wynika z tego, że
 
