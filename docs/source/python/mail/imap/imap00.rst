@@ -83,7 +83,7 @@ albo inaczej
 
 i na koniec wynika z tego, że
 
-:python:`mail_data[0][0]` odnosi się do :python:`b'numer_sekwencyjny (RFC822 {ilość byte\`ów}\'
+:python:`mail_data[0][0]` odnosi się do :python:`b'numer_sekwencyjny (RFC822 {ilość byte\`ów}\'`
 
 :python:`mail_data[0][1]` odnosi się do **Nagłówka oraz treści i załączników**
 
