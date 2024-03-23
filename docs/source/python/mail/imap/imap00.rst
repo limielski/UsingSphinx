@@ -170,37 +170,3 @@ Różnica między pobieraniem wiadomości za pomocą identyfikatorów UID a nume
 Kiedy pracujemy z identyfikatorami UID, używamy polecenia UID FETCH. Aby wykonać to polecenie w bibliotece IMAP dla Pythona, korzystamy z metody uid(). Natomiast kiedy pracujemy z numerami sekwencyjnymi, używamy po prostu polecenia FETCH.
 
 W związku z tym, gdy operujemy na numerach UID, stosujemy metodę uid() z odpowiednimi argumentami, aby pobrać dane wiadomości za pomocą polecenia UID FETCH, a gdy operujemy na numerach sekwencyjnych, stosujemy metodę fetch() z odpowiednimi argumentami, aby pobrać dane wiadomości za pomocą polecenia FETCH.
-
-
-Sprawdzić czy kody są poprawne
-
-.. code-block::
-   :linenos:
-
-   # Wyszukaj wiadomości w skrzynce pocztowej na podstawie numerów UID
-
-   # Zakres numerów UID wiadomości
-   uid_range = '1:5'
-
-   # Wykonaj wyszukiwanie
-   resp_code, matching_uids = imap_ssl.search(None, 'UID', uid_range)
-
-   # Sprawdź kod odpowiedzi i znalezione identyfikatory wiadomości
-   print("Kod odpowiedzi:", resp_code)
-   print("Znalezione identyfikatory UID wiadomości:", matching_uids)
-
-
-.. code-block::
-   :linenos:
-
-   # Wyszukaj wiadomości w skrzynce pocztowej na podstawie numerów sekwencyjnych (mail_id)
-
-   # Zakres numerów sekwencyjnych wiadomości
-   mail_id_range = '1:5'
-
-   # Wykonaj wyszukiwanie
-   resp_code, matching_ids = imap_ssl.search(None, 'SEQUENCE', mail_id_range)
-
-   # Sprawdź kod odpowiedzi i znalezione identyfikatory wiadomości
-   print("Kod odpowiedzi:", resp_code)
-   print("Znalezione identyfikatory wiadomości:", matching_ids)
