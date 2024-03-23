@@ -1,5 +1,4 @@
-.. role:: python(code)
-   :language: python
+
 
 Schemat uzycia IMAP
 ===================

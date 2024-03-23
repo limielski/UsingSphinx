@@ -31,6 +31,11 @@ html_theme_options = {
 }
 html_static_path = ['_static']
 
+rst_prolog = """
+.. role:: python(code)
+   :language: python
+"""
+
 master_doc = 'index'
 # Dołącz konfigurację dla generowania plików PDF
 # latex_documents = [

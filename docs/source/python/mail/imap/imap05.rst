@@ -1,9 +1,6 @@
 Opis funkcji
 ============
 
-.. role:: python(code)
-   :language: python
-
 imaplib.IMAP4_SSL(host, port)
 -----------------------------
 

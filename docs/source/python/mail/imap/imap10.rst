@@ -1,9 +1,6 @@
 Operacje na skrzynce i mailach
 ==============================
 
-.. role:: python(code)
-   :language: python
-
 Sekcja "# Wykonanie operacji na skrzynce pocztowej" patrz listing poniżej listing_ , zaznaczone na żółto, obejmuje operacje, które można wykonać na skrzynce pocztowej po nawiązaniu połączenia z serwerem IMAP przez SSL/TLS. Te operacje mogą obejmować różne zadania, takie jak pobieranie listy folderów, pobieranie wiadomości e-mail, wysyłanie nowych wiadomości, usuwanie wiadomości, przesuwanie wiadomości między folderami, itp.
 
 W protokole IMAP (Internet Message Access Protocol), każda wiadomość w folderze skrzynki pocztowej ma przypisany unikalny identyfikator UID (Unique Identifier). UID jest to liczba całkowita przypisana do każdej wiadomości w folderze, która służy do jednoznacznego identyfikowania tej wiadomości w kontekście danego folderu. UID jest stały dla danej wiadomości w danym folderze, co oznacza, że pozostaje niezmieniony nawet po dodaniu lub usunięciu innych wiadomości.
