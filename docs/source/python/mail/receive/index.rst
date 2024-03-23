@@ -1,0 +1,4 @@
+Odbieranie poczty
+=================
+
+inaczej "fetch"
