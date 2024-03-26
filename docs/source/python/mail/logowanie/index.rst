@@ -6,3 +6,4 @@ Logowanie
 
    tls0
    ssl
+   imap0
