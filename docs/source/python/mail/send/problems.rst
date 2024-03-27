@@ -65,8 +65,8 @@ i nastepnie w kodzie programu umieść dodatkowo
        server.sendmail(sender, receiver, message)
        print("Email sent successfully")
 
-Umieszczenie zmiennej w .bash
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Umieszczenie zmiennej CERT_PATH w .bash
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 `Rozwiązanie z StackOverflow: <https://stackoverflow.com/a/57795811/5503488>`_
 Run this to set the appropriate variables.
