@@ -5,6 +5,7 @@ Mail
    :maxdepth: 6
 
    ssl-tls/index
+   MIME/index
    logowanie/index
    receive/index
    send/index

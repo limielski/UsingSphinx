@@ -12,6 +12,7 @@ lub
 .. toctree::
    :maxdepth: 6
 
+   what_is_smtp
    ports
-   attach
+   attach/index
    problems

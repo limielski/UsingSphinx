@@ -1,5 +1,8 @@
-Załączniki
-==========
+Wstęp
+-----
+`MIMEMultipart, MIMEText, MIMEBase, payloads for sending email with file attachment <https://stackoverflow.com/questions/38825943/mimemultipart-mimetext-mimebase-and-payloads-for-sending-email-with-file-atta>`_
+
+`Sending Emails in Python - Tutorial with Code Examples <https://thepythonguru.com/sending-emails-in-python-tutorial-with-code-examples/>`_
 
 Często termin attach w kontekście e-maili jest kojarzony ze załącznikami takimi jak dokumenty, obrazy itp.
 

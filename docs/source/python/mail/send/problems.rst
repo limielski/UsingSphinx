@@ -5,7 +5,6 @@ Problemy
 SSL: CERTIFICATE_VERIFY_FAILED
 ------------------------------
 
-
 (ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)
 
 Komunikat błędu to:
