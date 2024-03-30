@@ -80,6 +80,16 @@ utworzonej wiadomości `msg`. Zakoduj go w `encode_base64` i dołącz plik z utw
 
 .. note:: Jeżeli używamy załącznik za pomocą MIMEImage, bądź MIMEText, to nie musimy uzywać set_payload
 
+
+.. note:: Można utworzyć w zaleznosci od potrzeby inne formy nagłówkow
+
+   - `# Ustawianie nagłówka Content-Disposition dla załącznika image_part.add_header('Content-Disposition', 'attachment', filename='obrazek.jpg')`
+   - `# Ustawianie nagłówka Content-Transfer-Encoding dla załącznika image_part.add_header('Content-Transfer-Encoding', 'base64')`
+   - `# Ustawianie nagłówka Content-ID dla załącznika image_part.add_header('Content-ID', '<image1>')`
+   - `# Ustawianie nagłówka Content-Type dla załącznika image_part.add_header('Content-Type', 'image/jpeg')`
+
+
+
 7. Po wykonaniu tych kroków postępuj zgodnie z instrukcjami opisanymi w poprzednim artykule,
 aby utworzyć sesję, zabezpieczyć ją i sprawdzić autentyczność,  przeslij wiadomość, konwertując msg na string.
 Nnastępnie po wysłaniu wiadomości zakończyć sesję.

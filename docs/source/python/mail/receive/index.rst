@@ -1,4 +1,8 @@
 Odbieranie poczty
 =================
 
-inaczej "fetch"
+.. toctree::
+   :maxdepth: 6
+
+   imap/index
+   attachments/index

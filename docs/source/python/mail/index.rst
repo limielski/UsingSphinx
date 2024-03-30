@@ -9,4 +9,3 @@ Mail
    logowanie/index
    receive/index
    send/index
-   imap/index

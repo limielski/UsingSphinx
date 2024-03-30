@@ -1,5 +1,5 @@
-Operacje na skrzynce i mailach
-==============================
+Operacje na skrzynce i mailach  skrócie
+=======================================
 
 Sekcja "# Wykonanie operacji na skrzynce pocztowej" patrz listing poniżej listing_ , zaznaczone na żółto, obejmuje operacje, które można wykonać na skrzynce pocztowej po nawiązaniu połączenia z serwerem IMAP przez SSL/TLS. Te operacje mogą obejmować różne zadania, takie jak pobieranie listy folderów, pobieranie wiadomości e-mail, wysyłanie nowych wiadomości, usuwanie wiadomości, przesuwanie wiadomości między folderami, itp.
 

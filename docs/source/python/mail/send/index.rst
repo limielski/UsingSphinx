@@ -14,5 +14,6 @@ lub
 
    what_is_smtp
    ports
+   functions
    attach/index
    problems
