@@ -27,8 +27,8 @@ Są możliwe inne możliwości:
 
 .. note:: Metoda kodowania i tworzenia nagłówkow jest wykonywana automatycznie, ale możemy wpłynąć na metode kodowania.
 
-set_param - informacjie w nagłówkach
-------------------------------------
+set_param - informacje w nagłówkach
+-----------------------------------
 
 W przypadku metody `as_bytes()` nie można bezpośrednio określić metody kodowania, ponieważ ta metoda służy jedynie
 do przekształcenia obiektu wiadomości MIME do postaci bajtowej. Metoda kodowania jest stosowana automatycznie,
@@ -92,12 +92,15 @@ po zastosowaniu
 
    VGVrc3Qgd2lhZG9tb8WbY2kgZG8gemFrb2Rvd2FuaWE=
 
-Zmiana domyslengo kodowania
+Zmiana domyslnego kodowania
 ---------------------------
 
 Nie powinno się jednak tego robić. Najlepiej zachowac spójność wszystkch kodowań.
 W ponizszym kodzie w funkcji MIMEText ustalane jest domyslne kodowanie jako 'ISO-8859-2'
 oraz domyślny zbiór znaków tez jako 'ISO-8859-2'. Dla spójności nie powinno sie stosować zbioru znaków, które nie pokrywaja się ze sposobem kodowania, gdyż prowadzi to do błedów.
+
+.. note::
+   Jeżeli zdecydujesz się na używanie różnych kodowań, mogą pojawić się problemy, gdy tekst zawiera znaki, które nie są współdzielone przez oba kodowania. W takim przypadku, próba dekodowania ciągu, który został zakodowany przy użyciu jednego zestawu znaków, za pomocą innego zestawu znaków, może prowadzić do błędów dekodowania lub do wyświetlania niewłaściwych znaków.
 
 Nastepnie zmieniany jest standard kodowania dla ciała wiadomości na Quoted-Printable.
 Dlatego przy rozkodowywaniu posłuzylismy sie modułem quopri a następnie zdekodowaliśmy tekst do 'ISO-8859-2'
