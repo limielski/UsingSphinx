@@ -36,8 +36,8 @@ Sprawdź dokumentację Python dla więcej szczegółów.
 Funkcja :python:`message_from_bytes()`
 --------------------------------------
 
-Funkcja :python:`message_from_bytes()` z biblioteki :python:`email` Pythona konwertuje surową wiadomość e-mail z formatu bajtów na
-obiekt wiadomości, który jest łatwiejszy do obsługi w Pythonie.
+Funkcja :python:`message_from_bytes()` z biblioteki :python:`email` Pythona konwertuje surową wiadomość e-mail
+z formatu bajtów na obiekt wiadomości, który jest łatwiejszy do obsługi w Pythonie.
 
 Gdy odbierasz wiadomość e-mail za pomocą `:python:imaplib`, surowa wiadomość jest odpowiedzią serwera IMAP i jest w formacie
 bajtów (to znaczy sekwencja bajtów). Taka forma jest trudna do obsługi bezpośrednio, ponieważ e-mail może zawierać

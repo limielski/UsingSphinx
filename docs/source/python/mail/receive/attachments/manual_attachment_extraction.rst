@@ -77,7 +77,9 @@ w kontekście minimalnej konfiguracji, `Content-Disposition` i `Content-Transfer
 Rozkodowywanie
 --------------
 
-Aby rozkodować załącznik, musimy znać sposób jego zakodowania. W większości przypadków załączniki są kodowane w formacie base64 lub quoted-printable. Możemy sprawdzić to na podstawie nagłówka `Content-Transfer-Encoding` dla danej części wiadomości.
+Aby rozkodować załącznik, musimy znać sposób jego zakodowania. W większości przypadków załączniki są kodowane
+w formacie base64 lub quoted-printable. Możemy sprawdzić to na podstawie nagłówka `Content-Transfer-Encoding`
+dla danej części wiadomości.
 
 Oto jak możemy sprawdzić sposób kodowania i rozkodować załącznik bez korzystania z funkcji `walk()`:
 
@@ -142,7 +144,8 @@ Oto jak możemy sprawdzić sposób kodowania i rozkodować załącznik bez korzy
    mail.logout()
 
 
-   Jeśli załącznik jest kodowany w sposób inny niż base64, musimy zaimplementować odpowiednie procedury dekodowania dla danego rodzaju kodowania.
+Jeśli załącznik jest kodowany w sposób inny niż base64, musimy zaimplementować odpowiednie procedury
+dekodowania dla danego rodzaju kodowania.
 
 Oto jak możemy obsłużyć różne typy kodowania załącznika:
 
@@ -258,6 +261,11 @@ Poniżej przedstawiono przykładową funkcję, która realizuje ten cel:
    print(decoded_data)
 
 
-W tej funkcji `decode_attachment()` przyjmuje dane załącznika do dekodowania oraz kodowanie załącznika. Następnie na podstawie wartości kodowania, funkcja dekoduje dane załącznika przy użyciu odpowiedniej procedury dekodowania (np. `base64.b64decode()` dla kodowania base64 lub `quopri.decodestring()` dla kodowania quoted-printable).
+W tej funkcji `decode_attachment()` przyjmuje dane załącznika do dekodowania oraz kodowanie załącznika.
+Następnie na podstawie wartości kodowania, funkcja dekoduje dane załącznika przy użyciu odpowiedniej
+procedury dekodowania (np. `base64.b64decode()` dla kodowania base64 lub `quopri.decodestring()`
+dla kodowania quoted-printable).
 
-Jeśli załącznik jest kodowany w innym formacie, można dodać obsługę tego kodowania do funkcji, w celu uwzględnienia innych możliwych typów kodowania. Funkcja może być łatwo rozbudowana, aby obsługiwać różne scenariusze kodowania załączników.
+Jeśli załącznik jest kodowany w innym formacie, można dodać obsługę tego kodowania do funkcji,
+w celu uwzględnienia innych możliwych typów kodowania. Funkcja może być łatwo rozbudowana,
+aby obsługiwać różne scenariusze kodowania załączników.

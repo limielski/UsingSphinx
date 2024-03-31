@@ -44,11 +44,13 @@ Schemat uzycia IMAP
    imap_ssl.close()
 
 
-Ten fragment kodu odpowiada za odpowiednie połączenie z serwerem pocztowym przez IMAP i pobranie listy wiadomości e-mail z wybranego folderu poczty. Spróbuję to wytłumaczyć krok po kroku.
+Ten fragment kodu odpowiada za odpowiednie połączenie z serwerem pocztowym przez IMAP i pobranie
+listy wiadomości e-mail z wybranego folderu poczty. Spróbuję to wytłumaczyć krok po kroku.
 
 :python:`imap_ssl = imaplib.IMAP4_SSL(IMAP_SERVER, IMAP_PORT)`
 
-Ta linia tworzy nowe połączenie do serwera IMAP. Jest to serwer poczty, który przechowuje wiadomości e-mail na serwerze i pozwala klientom na ich pobieranie.
+Ta linia tworzy nowe połączenie do serwera IMAP. Jest to serwer poczty, który przechowuje wiadomości e-mail
+na serwerze i pozwala klientom na ich pobieranie.
 IMAP4_SSL jest wersją protokołu IMAP, która używa SSL (Secure Sockets Layer) do zapewnienia bezpiecznej komunikacji.
 
 :python:`imap_ssl.login(USERNAME, PASSWORD)`
@@ -62,12 +64,14 @@ Możesz wybrać inne skrzynki, takie jak wysłane e-maile (SENT), ale w tym przy
 
 :python:`resp_code, mail_ids = imap_ssl.search(None, "ALL")`
 
-zwraca odpowiedż w formie :python:`'OK'` oraz :python:`mail_ids` -- jednolelementową listę binarnych danych odzielanych spacjami, przedstawiającymi numery sekwencyjne wiadomosci e-mail
+zwraca odpowiedż w formie :python:`'OK'` oraz :python:`mail_ids` -- jednolelementową listę binarnych danych
+odzielanych spacjami, przedstawiającymi numery sekwencyjne wiadomosci e-mail
 
 Następnie w celu uzyskania informacji o wiadomosci takich jak ngłówki i treść używamy metody :python:`fetch(mail_id, 'RFC822`)
 Inne mozliwości zamiast RFC822 to:
 :python:`resp_code` zwraca :python`'OK'` bądź ..
-natomiast :python:`mail_data` to lista zawierająca dane na temat wiadomości, czyli numeru sekwencyjnego maila, danych, ktore sa przesylane, dlugości meila w byte'ach, oraz nagłówka, treści wiadomości i załaczników
+natomiast :python:`mail_data` to lista zawierająca dane na temat wiadomości, czyli numeru sekwencyjnego maila,
+danych, ktore sa przesylane, dlugości meila w byte'ach, oraz nagłówka, treści wiadomości i załaczników
 
 :python:`mail_data = [ (TUPLA), b')']`
 

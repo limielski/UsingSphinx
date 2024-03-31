@@ -76,7 +76,10 @@ Poniżej znajduje się zmodyfikowany kod, który uwzględnia różne kodowania z
    mail.logout()
 
 
-W tym kodzie dodano obsługę różnych kodowań załączników. Jeśli załącznik jest zakodowany w formacie base64, używana jest funkcja `base64.b64decode()` do jego dekodowania. Natomiast jeśli jest zakodowany w formacie quoted-printable, używana jest funkcja `quopri.decodestring()` do jego dekodowania. Dzięki temu kod jest w stanie prawidłowo obsługiwać różne rodzaje kodowania załączników.
+W tym kodzie dodano obsługę różnych kodowań załączników. Jeśli załącznik jest zakodowany w formacie base64,
+używana jest funkcja `base64.b64decode()` do jego dekodowania. Natomiast jeśli jest zakodowany w formacie
+quoted-printable, używana jest funkcja `quopri.decodestring()` do jego dekodowania. Dzięki temu kod jest
+w stanie prawidłowo obsługiwać różne rodzaje kodowania załączników.
 
 Inne metody kodowania
 ---------------------
