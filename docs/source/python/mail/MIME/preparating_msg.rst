@@ -95,7 +95,12 @@ po zastosowaniu
 Zmiana domyslengo kodowania
 ---------------------------
 
-Nie powinno się jednak tego robić. Najlepiej zachowac spójność wszystkch kodowań
+Nie powinno się jednak tego robić. Najlepiej zachowac spójność wszystkch kodowań.
+W ponizszym kodzie w funkcji MIMEText ustalane jest domyslne kodowanie jako 'ISO-8859-2'
+oraz domyślny zbiór znaków tez jako 'ISO-8859-2'. Dla spójności nie powinno sie stosować zbioru znaków, które nie pokrywaja się ze sposobem kodowania, gdyż prowadzi to do błedów.
+
+Nastepnie zmieniany jest standard kodowania dla ciała wiadomości na Quoted-Printable.
+Dlatego przy rozkodowywaniu posłuzylismy sie modułem quopri a następnie zdekodowaliśmy tekst do 'ISO-8859-2'
 
 .. code-block::
    :emphasize-lines: 13
