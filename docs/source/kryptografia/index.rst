@@ -1,5 +1,5 @@
-Kryptografia
-============
+Kryptografia w Pythonie
+=======================
 
 .. toctree::
    :maxdepth: 2
