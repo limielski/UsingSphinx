@@ -1,7 +1,51 @@
-# Zależności Sphinx
-sphinx==7.2.6 # Wersja Sphinx kompatybilna z Pythonem 3.8
-sphinx-rtd-theme  # Temat Read the Docs
-recommonmark==0.7.1  # Obsługa Markdown w Sphinx
-docutils>=0.18  # Obsługa reStructuredText
-nbsphinx>=0.8.7
-
+alabaster
+attrs
+babel
+beautifulsoup4
+bleach
+certifi
+charset-normalizer
+defusedxml
+docutils
+fastjsonschema
+idna
+imagesize
+Jinja2
+jsonschema
+jsonschema-specifications
+jupyter_client
+jupyter_core
+jupyterlab_pygments
+MarkupSafe
+mistune
+nbclient
+nbconvert
+nbformat
+nbsphinx
+packaging
+pandocfilters
+platformdirs
+Pygments
+python-dateutil
+pyzmq
+referencing
+requests
+rpds-py
+six
+snowballstemmer
+soupsieve
+Sphinx
+sphinx-rtd-theme
+sphinxcontrib-applehelp
+sphinxcontrib-devhelp
+sphinxcontrib-htmlhelp
+sphinxcontrib-jquery
+sphinxcontrib-jsmath
+sphinxcontrib-qthelp
+sphinxcontrib-serializinghtml
+tinycss2
+tornado
+traitlets
+typing_extensions
+urllib3
+webencodings

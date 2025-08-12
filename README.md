@@ -1,5 +1,5 @@
 # UsingSphinx
-How to use Sphinx, generate docs ...
+12.07.2025 How to use Sphinx, generate docs ...
 ## Lik zewnętrzny
 źródło : `dalsza część <https://realpython.com/python311-exception-groups/>`_
 to samo co [dalsza część](https://realpython.com/python311-exception-groups/)
